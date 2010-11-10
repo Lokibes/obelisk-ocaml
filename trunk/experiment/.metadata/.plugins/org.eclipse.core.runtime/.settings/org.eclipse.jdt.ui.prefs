@@ -1,14 +1,24 @@
-#Thu Nov 11 00:17:53 ICT 2010
-useQuickDiffPrefPage=true
-proposalOrderMigrated=true
-tabWidthPropagated=true
-content_assist_proposals_background=255,255,255
-org.eclipse.jdt.ui.javadoclocations.migrated=true
-useAnnotationsPrefPage=true
-org.eclipse.jface.textfont=1|Courier New|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Courier New;
-org.eclipse.jdt.ui.editor.tab.width=
-org.eclipse.jdt.ui.formatterprofiles.version=11
-spelling_locale_initialized=true
-eclipse.preferences.version=1
+#Thu Nov 11 00:32:51 ICT 2010
 content_assist_proposals_foreground=0,0,0
+spelling_locale_initialized=true
+spelling_ignore_urls=true
+spelling_ignore_non_letters=true
+spelling_ignore_ampersand_in_properties=true
+useAnnotationsPrefPage=true
+eclipse.preferences.version=1
+org.eclipse.jface.textfont=1|Courier New|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Courier New;
+tabWidthPropagated=true
+org.eclipse.jdt.ui.editor.tab.width=
+spelling_ignore_single_letters=true
 fontPropagated=true
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+proposalOrderMigrated=true
+spelling_user_dictionary_encoding=
+spelling_ignore_mixed=true
+spelling_ignore_java_strings=true
+content_assist_proposals_background=255,255,255
+org.eclipse.jdt.ui.formatterprofiles.version=11
+spelling_ignore_digits=true
+spelling_ignore_upper=true
+useQuickDiffPrefPage=true
+spelling_ignore_sentence=true

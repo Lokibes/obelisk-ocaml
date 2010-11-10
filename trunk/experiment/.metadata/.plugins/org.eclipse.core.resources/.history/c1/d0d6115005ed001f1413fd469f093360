@@ -114,6 +114,5 @@ let rec print_down s =
 		| Mul (a, b) -> "(" ^ (print_down a) ^ "*" ^ (print_down b) ^ ")"
 		| Div (a, b) -> "(" ^ (print_down a) ^ "/" ^ (print_down b) ^ ")"
 		| V str -> str
-let reform exp = print_endline("You wrote : " ^ (print_down exp))
-reform (Plu ((Mul (V "a", V "b")), Div (V "c", V "d")))
-reform (Plu (Mul (V "e1", V "e2"), Mul (V "e3", V "e4")))
+let reform exp = print_endline(print_down exp)
+reform (Plu ((Mul ("a", "b")), Div ("c", "d"))) 
