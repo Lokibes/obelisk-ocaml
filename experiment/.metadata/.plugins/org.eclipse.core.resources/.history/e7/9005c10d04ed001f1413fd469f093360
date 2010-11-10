@@ -102,18 +102,7 @@ Nil
 
 (* build a simple code-detecter *)
 type exp = 
-	| Plu of exp * exp
-	| Mul of exp * exp
-	| Min of exp * exp
-	| Div of exp * exp
-	| V of string
-let rec print_down s =
-	match s with
-		| Plu (a, b) -> "(" ^ (print_down a) ^ "+" ^ (print_down b) ^ ")"
-		| Min (a, b) -> "(" ^ (print_down a) ^ "-" ^ (print_down b) ^ ")"
-		| Mul (a, b) -> "(" ^ (print_down a) ^ "*" ^ (print_down b) ^ ")"
-		| Div (a, b) -> "(" ^ (print_down a) ^ "/" ^ (print_down b) ^ ")"
-		| V str -> str
-let reform exp = print_endline("You wrote : " ^ (print_down exp))
-reform (Plu ((Mul (V "a", V "b")), Div (V "c", V "d")))
-reform (Plu (Mul (V "e1", V "e2"), Mul (V "e3", V "e4")))
+	| Plu exp * exp
+	| Mul exp * exp
+	| Min exp * exp
+	| Div exp * exp

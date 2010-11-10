@@ -90,30 +90,4 @@ detect2 (P_Int (5, 0))
 
 (* applies TYPE to a binary Tree *)
 type bin_tree = Leaf of int | Tree of bin_tree * bin_tree
-Leaf 6
-Tree (Leaf 6, Leaf 5)
-Tree (Leaf 6, Tree (Leaf 3, Leaf 4))
-(* or , abstractedly : *)
-type 'a b_tree = Leaf of 'a | Tree of 'a b_tree * 'a b_tree
-Tree (Leaf "I", Tree (Leaf "love", Leaf "U"))
-type 'a list = Nil | :: of 'a * 'a list
-Nil
-1::5::6::Nil
-
-(* build a simple code-detecter *)
-type exp = 
-	| Plu of exp * exp
-	| Mul of exp * exp
-	| Min of exp * exp
-	| Div of exp * exp
-	| V of string
-let rec print_down s =
-	match s with
-		| Plu (a, b) -> "(" ^ (print_down a) ^ "+" ^ (print_down b) ^ ")"
-		| Min (a, b) -> "(" ^ (print_down a) ^ "-" ^ (print_down b) ^ ")"
-		| Mul (a, b) -> "(" ^ (print_down a) ^ "*" ^ (print_down b) ^ ")"
-		| Div (a, b) -> "(" ^ (print_down a) ^ "/" ^ (print_down b) ^ ")"
-		| V str -> str
-let reform exp = print_endline("You wrote : " ^ (print_down exp))
-reform (Plu ((Mul (V "a", V "b")), Div (V "c", V "d")))
-reform (Plu (Mul (V "e1", V "e2"), Mul (V "e3", V "e4")))
+Tree Leaf 6
