@@ -12,11 +12,6 @@ let detect a =
 		| [] -> "wrong password :D"
 		| head::tail -> if a = [1;2;3;4] then "correct ! welcome" else "wrong password"
 detect [1;2;3;4]
-let guess a b = 
-	match a with
-		| "a" -> if b = 0 then "U are" ^ "... right ^^" else ""
-		| _ -> "Absolutely wrong :D"
-guess "a" 0
 
 (* recursive *)
 (* find Fibonacci Nth *)let rec fibo n =
@@ -107,13 +102,11 @@ let t1 = Leaf 6
 let t2 = Tree (Leaf 6, Leaf 5)
 let t3 = Tree (Tree (Leaf 7, Leaf 2), Tree (Leaf 4, Leaf 6))
 find 4 t2
-cut_leaf 6 t3
-cut_leaf 4 (cut_leaf 0 t3)
-cut_leaf "I" love (* wrong *)
+cut_leaf 6 t2
 
 (* or , abstractedly : *)
 type 'a b_tree = Leaf of 'a | Tree of 'a b_tree * 'a b_tree
-let love = Tree (Leaf "I", Tree (Leaf "love", Leaf "U"))
+Tree (Leaf "I", Tree (Leaf "love", Leaf "U"))
 type 'a list = Nil | :: of 'a * 'a list
 Nil
 1::5::6::Nil
