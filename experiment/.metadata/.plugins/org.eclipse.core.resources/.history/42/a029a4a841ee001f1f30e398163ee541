@@ -12,11 +12,6 @@ let detect a =
 		| [] -> "wrong password :D"
 		| head::tail -> if a = [1;2;3;4] then "correct ! welcome" else "wrong password"
 detect [1;2;3;4]
-let guess a b = 
-	match a with
-		| "a" -> if b = 0 then "U are" ^ "... right ^^" else ""
-		| _ -> "Absolutely wrong :D"
-guess "a" 0
 
 (* recursive *)
 (* find Fibonacci Nth *)let rec fibo n =

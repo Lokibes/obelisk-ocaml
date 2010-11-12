@@ -16,7 +16,7 @@ let guess a b =
 	match a with
 		| "a" -> if b = 0 then "U are" ^ "... right ^^" else ""
 		| _ -> "Absolutely wrong :D"
-guess "a" 0
+guess "h" 8
 
 (* recursive *)
 (* find Fibonacci Nth *)let rec fibo n =

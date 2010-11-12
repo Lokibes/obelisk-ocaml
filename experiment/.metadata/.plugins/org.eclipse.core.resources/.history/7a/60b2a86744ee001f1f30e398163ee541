@@ -14,9 +14,11 @@ let detect a =
 detect [1;2;3;4]
 let guess a b = 
 	match a with
-		| "a" -> if b = 0 then "U are" ^ "... right ^^" else ""
+		| "a" -> if b = 0 then
+				"U are" ^
+				"... right ^^"
 		| _ -> "Absolutely wrong :D"
-guess "a" 0
+guess "a" 8
 
 (* recursive *)
 (* find Fibonacci Nth *)let rec fibo n =
