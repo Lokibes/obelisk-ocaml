@@ -1,5 +1,5 @@
 
-(* demo of teacher ========================================================== *)
+(* demo of teacher *)
 let rec append l1 l2 = 
 	match l1 with
 		| [] -> l2
@@ -54,7 +54,7 @@ exception No_existance
 let rec exists list1 list2 =
 	match list2 with
 		| [] -> if list1 = [] then (raise No_existance) else ()
-		| head::tail -> if (member list1 head) then (exists list1 tail)
+		| head::tail -> if (member list1 head)then (exists list1 tail)
 										else (raise No_existance)
 exists [1;2;3;6] [1;3;2;2;6;3;3;1;2;3;2]
 
